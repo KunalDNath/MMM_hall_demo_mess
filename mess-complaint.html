@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#5b35d5">
+<meta name="description" content="MMM Hall Mess and Grievance Portal">
+<title>Mess Complaint | MMM Hall</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="mess">
+<div class="topbar"><div class="container"><span>MMM Hall of Residence • IIT Kharagpur</span><span>Mess & Hall Services</span></div></div>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">M</span><span>MMM HALL<small>Mess & Grievance Portal</small></span></a>
+    <nav class="desktop-nav">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="menu.html" data-page="menu">Menu</a>
+      <a href="mess-complaint.html" data-page="mess">Mess Complaint</a>
+      <a href="hall-grievance.html" data-page="hall">Hall Grievance</a>
+      <a href="track.html" data-page="track">Track</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html" data-page="home">🏠 Home</a>
+    <a href="menu.html" data-page="menu">🍽️ Weekly Menu</a>
+    <a href="mess-complaint.html" data-page="mess">🍴 Mess Complaint</a>
+    <a href="hall-grievance.html" data-page="hall">🏠 Hall Grievance</a>
+    <a href="track.html" data-page="track">🔎 Track Grievance</a>
+  </div>
+</header>
+<main>
+<section class="section"><div class="container">
+<div class="section-head"><div><div class="kicker" style="color:var(--orange)">MESS SERVICE</div><h2>File a Mess Complaint</h2><p>Keep it specific. Add a photo whenever it helps explain the issue.</p></div></div>
+<div class="notice" style="margin-bottom:14px">Your personal details are collected for complaint handling. They should not be shown on the public grievance page.</div>
+<div class="card form-card">
+<form id="complaint-form" class="form-grid">
+<div class="field"><label>Roll Number *</label><input required pattern="[0-9]{2}[A-Za-z]{2}[0-9]{2}[A-Za-z][0-9]{2}" placeholder="25MS60R20"></div>
+<div class="field"><label>Full Name *</label><input required placeholder="Your name"></div>
+<div class="field"><label>Room Number *</label><input required placeholder="e.g. 214"></div>
+<div class="field"><label>Block *</label><input required placeholder="e.g. MMM"></div>
+<div class="field"><label>Contact Number *</label><input required type="tel" inputmode="numeric" placeholder="10-digit mobile number"></div>
+<div class="field"><label>Complaint Category *</label><select required><option value="">Select</option><option>Food Quality</option><option>Food Quantity</option><option>Hygiene</option><option>Taste</option><option>Menu</option><option>Dining Hall</option><option>Staff Behaviour</option><option>Other</option></select></div>
+<div class="field full"><label>Describe the problem *</label><textarea required placeholder="What happened? Mention meal, date/time and any useful detail."></textarea></div>
+<div class="field full"><label>Photo</label><div class="upload">📷 Tap to add a photo<br><span class="help">Camera or gallery • JPG/PNG • multiple photos can be enabled later</span><input type="file" accept="image/*" style="margin-top:12px"></div></div>
+<div class="field full"><button class="btn btn-brand" type="submit">Submit Mess Complaint</button></div>
+</form>
+<div id="success-box" class="card" hidden style="margin-top:16px;background:#eaf9f2;border-color:#bce8d3"><h3>✅ Complaint Registered</h3><p>Your grievance ID is:</p><strong id="success-id" style="font-size:22px"></strong><p class="help">Save this ID to track the complaint.</p><a class="btn btn-brand" href="track.html">Track Grievance</a></div>
+</div></div></section>
+</main>
+<footer class="footer"><div class="container footer-grid">
+  <div><h3>MMM Hall</h3><p style="font-size:13px">A mobile-first portal for transparent mess information and hall grievance tracking.</p></div>
+  <div><h3>Services</h3><a href="menu.html">Weekly Menu</a><a href="mess-complaint.html">Mess Complaint</a><a href="hall-grievance.html">Hall Grievance</a></div>
+  <div><h3>Track</h3><a href="track.html">Track a Grievance</a><a href="admin.html">Admin Demo</a></div>
+</div></footer>
+<nav class="bottom-nav">
+<a href="index.html" data-page="home"><span>🏠</span>Home</a>
+<a href="menu.html" data-page="menu"><span>🍽️</span>Menu</a>
+<a href="hall-grievance.html" data-page="hall"><span>📝</span>Report</a>
+<a href="track.html" data-page="track"><span>🔎</span>Track</a>
+</nav>
+<script src="assets/app.js"></script>
+</body></html>

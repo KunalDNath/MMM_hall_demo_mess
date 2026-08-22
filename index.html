@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#5b35d5">
+<meta name="description" content="MMM Hall Mess and Grievance Portal">
+<title>Home | MMM Hall</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+<div class="topbar"><div class="container"><span>MMM Hall of Residence • IIT Kharagpur</span><span>Mess & Hall Services</span></div></div>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">M</span><span>MMM HALL<small>Mess & Grievance Portal</small></span></a>
+    <nav class="desktop-nav">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="menu.html" data-page="menu">Menu</a>
+      <a href="mess-complaint.html" data-page="mess">Mess Complaint</a>
+      <a href="hall-grievance.html" data-page="hall">Hall Grievance</a>
+      <a href="track.html" data-page="track">Track</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html" data-page="home">🏠 Home</a>
+    <a href="menu.html" data-page="menu">🍽️ Weekly Menu</a>
+    <a href="mess-complaint.html" data-page="mess">🍴 Mess Complaint</a>
+    <a href="hall-grievance.html" data-page="hall">🏠 Hall Grievance</a>
+    <a href="track.html" data-page="track">🔎 Track Grievance</a>
+  </div>
+</header>
+<main>
+<section class="hero"><div class="container"><div class="hero-card">
+  <div class="kicker">MMM Hall of Residence • IIT Kharagpur</div>
+  <h1>Report. Track. Resolve.</h1>
+  <p>One mobile-first place for the MMM mess menu, mess complaints and hall grievances — with transparent status tracking.</p>
+  <div class="actions"><a class="btn btn-primary" href="menu.html">🍽️ Today's Menu</a><a class="btn btn-outline" href="hall-grievance.html">📝 Report a Problem</a></div>
+</div></div></section>
+
+<section class="section"><div class="container">
+  <div class="section-head"><div><h2>Today at MMM</h2><p>Menu information based on the August demo menu.</p></div><a class="btn btn-soft" href="menu.html">Full menu →</a></div>
+  <div class="today">
+    <div class="date-card"><div class="day">Today's day</div><div class="date" id="home-day"></div><div style="opacity:.75">Today's actual menu is shown below with Veg / Non-Veg choices.</div></div>
+    <div id="today-menu" class="today-menu-grid" style="grid-column:1/-1"></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+<div class="grid grid-3">
+  <a class="card service-card" href="mess-complaint.html"><div class="icon orange">🍴</div><div><h3>Mess Complaint</h3><p>Report food quality, hygiene, quantity or other mess issues with photos.</p></div><b>File complaint →</b></a>
+  <a class="card service-card" href="hall-grievance.html"><div class="icon">🏠</div><div><h3>Hall Grievance</h3><p>Register detailed room, maintenance, electrical, plumbing and common-area problems.</p></div><b>Register grievance →</b></a>
+  <a class="card service-card" href="track.html"><div class="icon cyan">🔎</div><div><h3>Track Grievance</h3><p>Enter your grievance ID and see the latest status and resolution.</p></div><b>Track now →</b></a>
+</div>
+</div></section>
+
+<section class="section"><div class="container"><div class="card">
+<div class="section-head"><div><h2>Transparency by design</h2><p>Every grievance can have a unique ID, status timeline and resolution record.</p></div></div>
+<div class="grid grid-4 stats">
+<div><div class="number">24/7</div><div class="label">Online reporting</div></div>
+<div><div class="number">48h</div><div class="label">Resolution target</div></div>
+<div><div class="number">1 ID</div><div class="label">Per grievance</div></div>
+<div><div class="number">📷</div><div class="label">Photo evidence</div></div>
+</div>
+</div></div></section>
+
+</main>
+<footer class="footer"><div class="container footer-grid">
+  <div><h3>MMM Hall</h3><p style="font-size:13px">A mobile-first portal for transparent mess information and hall grievance tracking.</p></div>
+  <div><h3>Services</h3><a href="menu.html">Weekly Menu</a><a href="mess-complaint.html">Mess Complaint</a><a href="hall-grievance.html">Hall Grievance</a></div>
+  <div><h3>Track</h3><a href="track.html">Track a Grievance</a><a href="admin.html">Admin Demo</a></div>
+</div></footer>
+<nav class="bottom-nav">
+<a href="index.html" data-page="home"><span>🏠</span>Home</a>
+<a href="menu.html" data-page="menu"><span>🍽️</span>Menu</a>
+<a href="hall-grievance.html" data-page="hall"><span>📝</span>Report</a>
+<a href="track.html" data-page="track"><span>🔎</span>Track</a>
+</nav>
+<script src="assets/app.js"></script>
+</body></html>
